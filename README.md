@@ -11,4 +11,13 @@
 
 1. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.tx
+
+2.How to run API URLS:
+uvicorn main:app --reload
+
+
+
+http://127.0.0.1:8000	404 Error — because no @app.get("/") root homepage route is defined.
+http://127.0.0.1:8000/docs	✅ This opens Swagger UI, a full automatic documentation of all your API endpoints (POST, GET, etc.). You can also try the API directly here.
+http://127.0.0.1:8000/redoc	✅ This opens ReDoc documentation, a beautiful professional style API documentation automatically generated.
